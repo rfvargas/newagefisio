@@ -1,0 +1,278 @@
+/*importando a font roboto 400regeular e 700bold lá do google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body, html {
+    font-family: Roboto, sans-serif; /*utilizadno a fonte importada roboto*/    
+    margin: 0;
+    /*cor do fundo com gradiente*/
+    /*background: linear-gradient(236.85deg, hwb(240 54% 44%) 27.26%, hwb(0 99% 1%) 96.03%);
+    background-repeat: no-repeat;*/    
+}
+
+.bg-img {    
+    background-image: url(../img/fisio_home_care.jpg); /*imagemm de fundo da página*/
+    background-repeat: no-repeat; /*não repetir a imagemm de fundo*/
+    background-size: cover; /*melhor ajuste para imagem de fundo*/
+    background-position-y: center;
+    /*position: center; /*centralizar a imagem de fundo*/
+    background-attachment: fixed; /*fixa o tamanho da imgagem de fundo... mesmo quando possui rolagem de tela quando modificado o tamanho da tela*/
+    /*background-attachment: scroll;*/
+}
+
+#main {
+    padding: 5px;         
+    /*
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    */
+}
+
+.container {}
+
+.cabecalho {
+    display: flex; /*informando que vai ser utilizado o flex-box no elemento pai <hader>*/
+    align-items: center; /*itens centralizados em linha*/
+    justify-content: space-between; /*propriedade para colocar espaço entre os elementos*/
+    /*margin: 10px 100px 10px 100px; /*topo direita esquerda bottom*/    
+    margin-bottom: 2px;        
+}
+
+h1 {    
+    text-align: center; /*alinhar o texto*/
+    font-size: 1rem;
+    /*word-break: normal;*/
+}
+
+.img-simb {
+    max-width: 80px; /*tamanho máximmo da largura*/                 
+}
+
+.img-foto {
+    max-width: 80px; /*tamanho máximmo da largura*/
+    border-radius: 100%; /*borda arredondada*/                 
+}
+
+#input-ano {
+    width: 90px;
+    height: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#input-mes {
+    width: 80px;
+    height: 25px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+#input-dia-ini {
+    width: 20px;
+    height: 25px;
+    font-size: 1rem;    
+}
+
+#input-dia-fin {
+    width: 20px;
+    height: 25px;
+    font-size: 1rem;    
+}
+
+::-webkit-input-placeholder {
+    font-size: 12px;
+}
+
+.div-tabela {
+    display: flex;    
+    justify-content: center;    
+}
+
+table, th, td {    
+    border: 2px solid;
+    border-collapse: collapse;
+    text-align: center;
+    max-width: 800px;    
+    /*margin: auto;*/    
+}
+
+tr {
+    width: 80px;
+    height: 10px;
+}
+
+th {
+    width: 80px;
+    height: 10px;
+    font-size: 0.80rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+td {
+    width: 80px;
+    height: 10px;
+}
+
+.p-lin-num {
+    font-size: 0.72rem;        
+}
+
+
+input {
+    background: transparent;
+    text-align: center;
+    border: 0;
+    outline: 1; /*none*/
+    font-size: 8px;
+    width: 96%; /*98%*/
+    height: 96%;
+}
+
+.div-botao {    
+    margin: 5px 5px 18px; /*topo... direita e esquerda... bottom*/
+}
+
+.div-botao button {
+    border: 0;
+    color: black;
+    font-weight: bold;
+    padding: 5px 20px;
+    font-size: 13px;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100px;
+    height: 40px;    
+}
+
+.bt-amarelo {    
+    background: rgb(251, 255, 0);    
+  }
+
+.bt-laranja {    
+    background: rgb(255, 160, 35);    
+  }
+
+.bt-azul {    
+    background: blue;    
+  }
+
+.bt-tirar-cor {
+    background: white;
+    opacity: 0.7;    
+  }
+
+.bt-salvar {
+    background: rgb(105, 104, 104);
+    /*opacity: 0.8;*/
+  }
+  
+.div-botao button:hover {
+    opacity: 0.4;
+  }
+  
+.div-botao-salvar {
+    display: flex;
+    justify-content: center;
+  }
+
+.div-botao-cores {
+    display: flex;
+    justify-content: center;
+  }
+
+#footer {        
+    background-color: darkslategray;    
+    bottom: 0;
+    max-height: 20px;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+    box-shadow: 0px -1px 1px #00000073;
+    opacity: 90%;
+  }
+
+
+/* -----------------------------*/
+/* ----------- MEDIA ----------*/
+/* -----------------------------*/
+
+@media (min-width: 560px){
+    h1 {
+        font-size: 2rem;
+    }
+
+    .img-simb {
+        max-width: 130px; /*tamanho máximmo da largura*/                 
+    }
+    
+    .img-foto {
+        max-width: 130px; /*tamanho máximmo da largura*/                       
+    }
+
+    #input-ano {
+        width: 170px;
+        font-size: 2rem;        
+    }
+    
+    #input-mes {
+        width: 150px;        
+        font-size: 2rem;        
+    }
+    
+    #input-dia-ini {
+        width: 40px;        
+        font-size: 2rem;        
+    }
+    
+    #input-dia-fin {
+        width: 40px;        
+        font-size: 2rem;        
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: 24px;
+    }
+
+    th {
+        font-size: 1rem;        
+    }
+
+    .div-botao button {        
+        font-size: 16px;        
+    }
+
+    .div-botao button {
+        width: 160px;
+        height: 50px;   
+    }
+
+    tr {
+        width: 160px;
+        height: 25px;
+    }
+
+    th {
+        width: 160px;
+        height: 25px;
+    }
+
+    td {
+        width: 160px;
+        height: 25px;
+    }
+
+    input {        
+        font-size: 15px;        
+    }
+
+    .p-lin-num {
+        font-size: 0.75rem;        
+    }
+}

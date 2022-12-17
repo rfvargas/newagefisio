@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda - RF Fisio</title>
+</head>
+<body class="bg-img">
+    <main id="main">
+        <div class="container">
+            <header class="cabecalho">            
+                <img class="img-foto" src="img/foto_rafa.jpg" alt="foto perfil" />
+                <h1>Agenda de atendimento - RF Fisio</br>
+                    <input type="text" class="input-cor-ano" id="input-ano" placeholder="digite o ano..." onclick="capturaID(this)"></br>
+                    mês: <input type="text" class="input-cor-mes" id="input-mes" placeholder="digite..." onclick="capturaID(this)">
+                    &nbsp;&nbsp;&nbsp;&nbsp;dia:&nbsp;<input type="text" class="input-cor-dia-ini" id="input-dia-ini" placeholder="X" onclick="capturaID(this)">
+                    a&nbsp;<input type="text" class="input-cor-dia-fin" id="input-dia-fin" placeholder="X" onclick="capturaID(this)">
+                </h1>
+                <img class="img-simb" src="img/simb_fisio.png" alt="símbolo fisio" />                           
+            </header>                
+            <div class="div-tabela">
+                <div class="div-lin-num">
+                    <p class="p-lin-num">
+                        </br></br>
+                        1.&nbsp;</br></br>
+                        2.&nbsp;</br></br>
+                        3.&nbsp;</br></br>
+                        4.&nbsp;</br></br>
+                        5.&nbsp;</br></br>
+                        6.&nbsp;</br></br>
+                        7.&nbsp;</br></br>
+                        8.&nbsp;</br></br>
+                        9.&nbsp;
+                    </p>
+                </div>
+                <table id="id-table">
+                    <tr>                      
+                        <th>segunda</th>                
+                        <th>terça</th>                                    
+                        <th>quarta</th>                
+                        <th>quinta</th>                
+                        <th>sexta</th>                    
+                    </tr>
+                    <tr>                        
+                        <td><input type="text" class="cor-seg0" id="text-seg0" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-ter0" id="text-ter0" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-qua0" id="text-qua0" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-qui0" id="text-qui0" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-sex0" id="text-sex0" onclick="capturaID(this)"></td>
+                    </tr>
+                    <tr>                        
+                        <td><input type="text" class="cor-seg1" id="text-seg1" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-ter1" id="text-ter1" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-qua1" id="text-qua1" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-qui1" id="text-qui1" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-sex1" id="text-sex1" onclick="capturaID(this)"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="cor-seg2" id="text-seg2" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-ter2" id="text-ter2" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-qua2" id="text-qua2" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-qui2" id="text-qui2" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-sex2" id="text-sex2" onclick="capturaID(this)"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="cor-seg3" id="text-seg3" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-ter3" id="text-ter3" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-qua3" id="text-qua3" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-qui3" id="text-qui3" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-sex3" id="text-sex3" onclick="capturaID(this)"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="cor-seg4" id="text-seg4" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-ter4" id="text-ter4" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-qua4" id="text-qua4" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-qui4" id="text-qui4" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-sex4" id="text-sex4" onclick="capturaID(this)"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="cor-seg5" id="text-seg5" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-ter5" id="text-ter5" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-qua5" id="text-qua5" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-qui5" id="text-qui5" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-sex5" id="text-sex5" onclick="capturaID(this)"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="cor-seg6" id="text-seg6" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-ter6" id="text-ter6" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-qua6" id="text-qua6" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-qui6" id="text-qui6" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-sex6" id="text-sex6" onclick="capturaID(this)"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="cor-seg7" id="text-seg7" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-ter7" id="text-ter7" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-qua7" id="text-qua7" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-qui7" id="text-qui7" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-sex7" id="text-sex7" onclick="capturaID(this)"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="cor-seg8" id="text-seg8" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-ter8" id="text-ter8" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-qua8" id="text-qua8" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-qui8" id="text-qui8" onclick="capturaID(this)"></td>
+                        <td><input type="text" class="cor-sex8" id="text-sex8" onclick="capturaID(this)"></td>
+                    </tr>                
+                </table>
+            </div>
+            <div class="div-botao">
+                <div class="div-botao-salvar">
+                    <button class="bt-salvar" id="bt-salvar" onClick="salvarRegistro()">Salvar registro</button>
+                </div>
+                <div class="div-botao-cores">
+                    <button class="bt-amarelo" id="bt-amarelo" onClick="pintarAmarelo()">Pintar amarelo</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button class="bt-laranja" id="bt-laranja" onClick="pintarLaranja()">Pintar laranja</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button class="bt-azul" id="bt-azul" onClick="pintarAzul()">Pintar azul</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button class="bt-tirar-cor" id="bt-tirar-cor" onClick="tirarCor()">Tirar cor</button>
+                </div>
+            </div>                              
+        </div>
+    </main>
+    <footer id="footer">
+        <p>
+            Github Agenda RF Fisio
+        </p>
+    </footer>   
+    <script src="app.js"></script>
+</body>
+</html>
